@@ -108,7 +108,7 @@ app.post('/signup', passport.authenticate('local-signup', {
 	failureFlash : true // allow flash messages
 }));
 
-app.get("/addsite", isLoggedIn function(req, res){
+app.get("/addsite", isLoggedIn, function(req, res){
 	res.render("addsite");
 });
 
